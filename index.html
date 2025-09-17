@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang ="ca">
     <head>
         <!-- completa -->
-         <div> testing commit </div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UAB/Enginyeria</title>
     </head>
     <body>
         <!-- SECCIÓ 1 - Capçalera -->
         <header>
             <!-- completa -->
+            <a href = "https://www.uab.cat" target = "_blank">
+                <img src="./img/uab.png" height="10%" width="40%">
+            </a>
+            <h1>Escola d'Enginyeria</h1>
+            <p>Benvinguts a l'Escola d'Enginyeria de la UAB</p>
         </header>
+        <hr>
         <!-- SECCIÓ 2 - Llistat dels diferents graus que ofereix l’escola d’enginyeria -->
         <section>
             <header>
@@ -16,6 +24,20 @@
             </header>
             <ul>
                 <!-- completa -->
+                <li>
+                    <a href = "https://www.uab.cat/grauEI">Enginyeria Informàtica</a>
+                    <ul>
+                        <li>Menció Enginyeria del software</li>
+                        <li>Menció Enginyeria de computadors</li>
+                        <li>Menció Computació</li>
+                        <li>
+                            <a href="./mencions/TI/index.html">Menció Tecnologies de la Informació</a>
+                        </li>
+                    </ul>
+                <li>Enginyeria de Sistemes de Telecomunicació</li>
+                <li>Enginyeria Electrònica de Telecomunicació</li>
+                <li>Enginyeria Química</li>
+                </li>
             </ul>
         </section>
         <!-- SECCIÓ 3 - Formulari de registre -->
@@ -26,6 +48,18 @@
             <p> Si us plau facilita'ns les teves dades </p>
             <form method="post" action="">
                 <!-- completa -->
+                <label for="nom">Nom Complet:</label>
+                <input type="text" name="nom" id="nom"><br>
+                <label for ="password">Password:</label>
+                <input type="password" name="password" id="password"><br>
+                <select name = "grau" id = "grau">
+                    <option value = "1">Menció Enginyeria del software</option>
+                    <option value = "2">Menció Enginyeria de computadors</option>
+                    <option value = "3">Menció Computació</option>
+                    <option value = "4">Menció Tecnologies de la Informació</option>
+                </select>
+                <br>
+                <input type="submit" value="Enviar">
             </form>
             <hr />
         </section>
